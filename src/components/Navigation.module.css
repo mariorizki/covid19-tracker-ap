@@ -1,0 +1,20 @@
+.Nav {
+  display: flex;
+  justify-content: center;
+}
+
+.NavUl {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.NavItem {
+  display: inline;
+  font-weight: bolder;
+  margin: 0 20px;
+}
+
+.Link {
+  text-decoration: none;
+}

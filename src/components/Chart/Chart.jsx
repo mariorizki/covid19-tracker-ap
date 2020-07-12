@@ -33,13 +33,18 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
               borderColor: 'red',
               backgroundColor: 'rgba (255, 0, 0, 0.5)',
               fill: true
+            },
+            {
+              data: dailyData.map(({ recovered }) => recovered),
+              label: 'recovered',
+              borderColor: 'green',
+              backgroundColor: 'rgba (0, 255, 0, 0.5)',
+              fill: true
             }
           ]
         }}
       />
     ) : null;
-
-  console.log(confirmed, recovered, deaths);
 
   const barChart = confirmed ? (
     <Bar
